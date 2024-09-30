@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03 | Formularios</title>
+    <script src="https://kit.fontawesome.com/a3844e1ba9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <section>
+            <h1>Mi primer Formulario</h1>
+            <form action="https://formspree.io/f/xpwavynd" method="POST">
+                <label for="nombre">Nombre:</label>
+                <!-- Input Tipo Texto -->
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required maxlength="10" minlength="3">
+                <br>
+                
+                <label for="password">Password</label>
+                <!-- Input Tipo Password -->
+                <input type="password" name="password" id="password" placeholder="Ingrese su password" required minlength="6" maxlength="12">
+                <br>
+
+                <label for="email">Email:</label>
+                <!-- Input Tipo Email -->
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                <br>
+
+                <label for="edad">Edad:</label>
+                <!-- Input Tipo Number -->
+                <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" required min="18" max="100">
+                <br>
+                
+                <label for="">Archivo:</label>
+                <!-- Input Tipo File -->
+                <input type="file" name="archivo" id="archivo" required>
+                <br>
+
+                <p>Radio Buttons</p>
+                <label for="lenguaje">PHP</label>
+                <input type="radio" name="lenguaje" id="lenguaje" value="PHP">
+                <br>
+                <label for="lenguaje">java</label>
+                <input type="radio" name="lenguaje" id="lenguaje" value="Java">
+                <br>
+                <label for="lenguaje">Python</label>
+                <input type="radio" name="lenguaje" id="lenguaje" value="Python">
+                <br>
+
+                <p>Checkbox</p>
+                <label for="maniana">mañana</label>
+                <input type="checkbox" name="maniana" id="maniana" value="mañana">
+                <br>
+                <label for="tarde">tarde</label>
+                <input type="checkbox" name="tarde" id="tarde" value="tarde">
+                <br>
+                <label for="noche">noche</label>
+                <input type="checkbox" name="noche" id="noche" value="noche">
+                <br>
+
+                <p>Select</p>
+                <label for="provincias">Provincias:</label>
+                <select name="provincias" id="provincias">
+                    <option value="0" selected>Seleccione una provincia</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Cordoba</option>
+                    <option value="3">Mendoza</option>
+                    <option value="4">Salta</option>
+                </select>
+                <br>
+                
+                <p>select optgroup</p>
+                <label for="provincias">Provincias:</label>
+                <select name="provincias" id="provincias">
+                    <optgroup label="Región Centro">
+                        <option value="1">Cordoba</option>
+                        <option value="2">Santa Fe</option>
+                        <option value="3">Entre Rios</option>
+                    </optgroup>
+                    <optgroup label="Región Cuyo">
+                        <option value="4">Mendoza</option>
+                        <option value="5">San Juan</option>
+                        <option value="6">San Luis</option>
+                    </optgroup>
+                    <optgroup label="Región Noroeste">
+                        <option value="7">Salta</option>
+                        <option value="8">Tucuman</option>
+                        <option value="9">Jujuy</option>
+                    </optgroup>
+                </select>
+                <br>
+
+                <p>Textarea</p>
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios" cols="50" rows="4" placeholder="Ingrese sus comentarios"></textarea>
+                <br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
